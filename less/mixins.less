@@ -1,1 +1,33 @@
 // Mixins Here
+/*.button-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+  }*/
+
+  .button(@bg-color:#22283A, @width:100px, @font-color:#fff){
+   /* display: block;*/
+    background-color: @bg-color;
+    /*margin: 0 10px 20px;*/
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@font-color;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover{
+    background-color: white;
+    color: #22283A;
+  }
+}
+
+.mobile-size(){
+width: 100%;
+}
+
+.mobile-paddidng(){
+    padding: 15px;
+}
